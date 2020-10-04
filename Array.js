@@ -81,3 +81,39 @@ console.log(revFruits)
 var nums = [1, 5, 2, 6, 3, 5, 2, 3, 6, 5, 2, 7];
 var lastIndex = nums.lastIndexOf(5);
 console.log(lastIndex); 
+
+
+
+/**
+ * Problem 1:
+ * Making Array flat and converting it to string:
+ */
+let arr = [[[1,2,3,4]]]
+
+let len = arr.length
+
+for(let i = 0; i < len ; i++ ) {
+    for(let j = 0; j < arr[i].length; j++) {
+        for(let k = 0; k < arr[j].length; k++) {
+            let newArr = (arr[k][0])
+            console.log(newArr.toString())
+        }
+    }
+
+}
+
+/**
+ * Problem 2:
+ */
+
+let arrTwo = [[1,2],
+             [3,4],
+             [5,6]]
+
+var secLength = arrTwo.length
+var newArrtwo = []
+for (let si =0; si < secLength ; si++ ) {
+    newArrtwo.push(arrTwo[si][0])
+    newArrtwo.push(arrTwo[si][1])                
+}
+console.log(newArrtwo)
